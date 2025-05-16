@@ -4,7 +4,9 @@ import DateDolar from '@components/DateDolar.astro'
 import SummaryButton from './SummaryButton.astro'
 import { BACK_API } from 'astro:env/client'
 
+
 const result = await fetch(`${BACK_API}/api/get-all-orders`)
+
 const {data} = await result.json()
 ---
 

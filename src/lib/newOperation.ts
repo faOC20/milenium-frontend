@@ -9,7 +9,7 @@ export const newOperation = async (data: string)=>{
         const errorInfo = document.getElementById('error-info');
         const errorFormInfo = document.getElementById('error-form-info');
 
-        const result = await fetch(`${BACK_API}/api/new-operation`, {
+        const result = await fetch(`http://localhost:5000/api/new-operation`, {
             method: "POST",
             headers: {
                 'Content-Type':'application/json'
